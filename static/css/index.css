@@ -1,0 +1,77 @@
+
+.container{
+  width: calc(100% - 16px);
+  height: calc(100vh - 16px);
+  box-sizing: border-box;
+  border: 4px solid #000;
+  border-radius: 32px;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.container__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.header__logo{
+  height: 52px;
+  width: 52px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 52px;
+}
+.header__nav{
+  height: 52px;
+  line-height: 52px;
+}
+.container__body{
+  text-align: center;
+  font-size: 100px;
+  margin-top: calc((100vh - 250px) / 2 - 112px);
+}
+.container__footer{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.container__footer > div {
+  width: calc((100% - 300px) / 3);
+  height: 200px;
+  border-radius: 32px 32px 0 0;
+  margin: 0 20px;
+  position: relative;
+  top: 0;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.container__footer .pink {
+  background: linear-gradient(45deg, #ff6fb8, #FFDDF5);
+  animation-delay: -1s
+}
+.container__footer .purple {
+  background: linear-gradient(45deg, #8383f8, #d2d2ff);
+}
+.container__footer .blue {
+  background: linear-gradient(45deg, #7be5f6, #d4fcff);
+  animation-delay: -0.5s
+}
+
+@keyframes example {
+  0%   {top: 150px;}
+  50%  {top: 0px;}
+  100% {top: 150px;}
+}
+
+p {
+  margin: 50px;
+}

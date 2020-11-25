@@ -1,0 +1,8 @@
+body, html {
+  margin: 0;
+  min-width: 1200px;
+  overflow-y: auto;
+}
+p {
+  margin: 0;
+}
