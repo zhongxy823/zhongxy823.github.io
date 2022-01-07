@@ -1,5 +1,4 @@
-
-.container{
+.container {
   width: calc(100% - 16px);
   height: calc(100vh - 16px);
   box-sizing: border-box;
@@ -9,13 +8,13 @@
   position: relative;
   overflow: hidden;
 }
-.container__header{
+.container__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px;
 }
-.header__logo{
+.header__logo {
   height: 52px;
   width: 52px;
   background-color: #000;
@@ -25,17 +24,33 @@
   text-align: center;
   font-weight: 500;
   line-height: 52px;
+  cursor: pointer;
 }
-.header__nav{
+.header__nav {
   height: 52px;
   line-height: 52px;
 }
-.container__body{
+.container__body {
   text-align: center;
-  font-size: 100px;
-  margin-top: calc((100vh - 250px) / 2 - 112px);
+  font-size: 88px;
+  margin-top: calc((100vh - 250px) / 2 - 224px);
 }
-.container__footer{
+.items {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.item {
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  box-shadow: 0 0 15px 1px #a8a8a8;
+  margin: 12px;
+}
+.item:hover {
+  box-shadow: 0 0 25px 5px #a8a8a8;
+}
+.container__footer {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -55,21 +70,27 @@
   animation-iteration-count: infinite;
 }
 .container__footer .pink {
-  background: linear-gradient(45deg, #ff6fb8, #FFDDF5);
-  animation-delay: -1s
+  background: linear-gradient(45deg, #ff6fb8, #ffddf5);
+  animation-delay: -1s;
 }
 .container__footer .purple {
   background: linear-gradient(45deg, #8383f8, #d2d2ff);
 }
 .container__footer .blue {
   background: linear-gradient(45deg, #7be5f6, #d4fcff);
-  animation-delay: -0.5s
+  animation-delay: -0.5s;
 }
 
 @keyframes example {
-  0%   {top: 150px;}
-  50%  {top: 0px;}
-  100% {top: 150px;}
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 150px;
+  }
 }
 
 p {
